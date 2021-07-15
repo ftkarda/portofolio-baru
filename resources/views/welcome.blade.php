@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:site_name" content="http://ftkarda.herokuapp.com/">
-        <meta property="og:title" content="Webstie Portofolio Arda" />
-        <meta property="og:description" content="Portofolio arda" />
+        <meta property="og:title" content="Website Portofolio Arda" />
+        <meta property="og:description" content="About Me, Portofolios, Contact Me" />
         <meta property="og:image" itemprop="image" content="{{asset('3x4/photo1.jpg')}}">
         <meta property="og:type" content="website" />
       
