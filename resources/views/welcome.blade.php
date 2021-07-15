@@ -24,7 +24,7 @@
     <body>
       @yield('content')
 
-      @include('navigation.nav')
+      @include('Navigation.nav')
     </body>
     
 
