@@ -5924,24 +5924,36 @@ var module_Splide = /*#__PURE__*/function (_Core) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @splidejs/splide */ "./node_modules/@splidejs/splide/dist/js/splide.esm.js");
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_splidejs_splide__WEBPACK_IMPORTED_MODULE_0__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 var btn = document.getElementById("whatsapp");
 
 if (btn) {
   btn.addEventListener('click', function () {
-    window.location.href = 'https://api.whatsapp.com/send?phone=6285346741110&text=Thank you for your time, I look forward to hearing from you soon';
+    window.location.href = 'https://api.whatsapp.com/send?phone=6285346741110&text=Thank you for your time, I look forward ...';
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("hamburger").onclick = function toggleMenu() {
-    var navToggle = document.getElementsByClassName("js-toggle");
+function toggleMenu() {
+  var navToggle = document.getElementsByClassName("js-toggle");
 
-    for (var i = 0; i < navToggle.length; i++) {
-      navToggle.item(i).classList.toggle("hidden");
-    }
-  };
-});
+  for (var i = 0; i < navToggle.length; i++) {
+    navToggle.item(i).classList.toggle("hidden");
+  }
+}
+
+document.getElementById("hamburger").addEventListener("click", toggleMenu);
 var options = {
   heightRatio: 0.5,
   width: '65vw',
@@ -5957,15 +5969,34 @@ var options = {
 };
 new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())('.splide', options).mount();
 var modal = document.getElementById('myModal');
-var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
+var imgs = document.getElementsByClassName('zoom');
+Array.apply(void 0, _toConsumableArray(imgs)).forEach(function (element) {
+  element.addEventListener('click', imgonclick);
+});
 var captionText = document.getElementById("caption");
 
-img.onclick = function () {
+function imgonclick() {
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-};
+} // var img = document.getElementById('myImg');
+// var modalImg = document.getElementById("img01");
+// var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+// var img = document.getElementById('myImg2');
+// var modalImg = document.getElementById("img02");
+// var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
 
 var span = document.getElementsByClassName("close")[0];
 
