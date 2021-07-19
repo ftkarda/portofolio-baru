@@ -11,7 +11,7 @@
               <div class="relative">
                   <div class="bg-card">
                   </div>
-                <div class="relative md:flex space-x-12 z-2 bg-white max-w-7xl p-12 rounded-md shadow-md">
+                <div class="relative md:flex z-2 bg-white p-12 rounded-md shadow-md">
                   <div class="flex flex-col space-y-6 justify-between py-4">
                     <div>
                      <img src="{{asset('3x4/photo1.jpg')}}" alt="" class="w-48 rounded-full border-6 border-white shadow-md flex-shrink-0">
