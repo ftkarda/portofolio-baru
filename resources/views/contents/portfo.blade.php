@@ -18,11 +18,11 @@
   </div>
   
   
-  {{-- <div class="flex justify-center space-x-6 md:justify-items-center md:flex hidden pt-24">
+  <div class="flex justify-center space-x-6 md:justify-items-center md:flex hidden pt-24">
   <a href="{{route('home') }}"  class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-full py-3 px-6 z-10"><ion-icon name="home-outline"></ion-icon> Home</a>
   <a href="{{route('about') }}"  class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-full py-3 px-6 z-10"><ion-icon name="person-outline"></ion-icon> About me </a>
   <a href="{{route('portfo') }}"  class="{{ Route::is('portfo') ? 'from-pink-500 to-yellow-500' : 'from-green-400 to-blue-500' }} bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 rounded-full py-3 px-6 z-10"><ion-icon name="briefcase-outline"></ion-icon> Portofolios </a>
-  </div> --}}
+  </div>
 
   <div class="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-16">
    
