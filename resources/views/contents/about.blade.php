@@ -43,7 +43,7 @@
        <br>
        <p class="text-xl mt-4"> <span class="text-red-600">Telkom</span> Balikpapan <span class="text-sm">| May - August 2016 </span></p>
        <p class="">Intern</p>
-       <p class="mt-2 inline-flex border-b-2 pb-32">Create, Update, Delete data consumer from Telkom database also migrate data consumer from speedy to indihome product.</p>
+       <p class="mt-2 inline-flex border-b-2">Create, Update, Delete data consumer from Telkom database also migrate data consumer from speedy to indihome product.</p>
      </div>
   </div>
  

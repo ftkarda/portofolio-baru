@@ -2,12 +2,12 @@ import Splide from '@splidejs/splide';
 
 
 
-var btn = document.getElementById("whatsapp")
-if(btn){
-    btn.addEventListener('click', () => {
+var whatsapp = document.getElementsByClassName("whatsapp")
+Array(...whatsapp).forEach(element => {
+    element.addEventListener('click', () => {
         window.location.href = 'https://api.whatsapp.com/send?phone=6285346741110&text=Thank you for your time, I look forward ...';
     });
-}
+})
   
 
 
@@ -34,8 +34,10 @@ var options = {
 	// 	}
 	// }
 }
+if (document.getElementsByClassName('splide').length !== 0) {
+    new Splide( '.splide', options).mount();
+}
 
-new Splide( '.splide', options).mount();
 
 
 var modal = document.getElementById('myModal');
@@ -73,9 +75,13 @@ function imgonclick(){
 // }
 
 
-var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() { 
-    modal.style.display = "none";
-  }
+
+var span = document.getElementsByClassName("close")[0];
+if (span) {
+    span.onclick = function() { 
+        modal.style.display = "none";
+      }
+}
+
 

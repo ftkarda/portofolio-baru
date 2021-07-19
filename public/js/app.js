@@ -5937,13 +5937,12 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
-var btn = document.getElementById("whatsapp");
-
-if (btn) {
-  btn.addEventListener('click', function () {
+var whatsapp = document.getElementsByClassName("whatsapp");
+Array.apply(void 0, _toConsumableArray(whatsapp)).forEach(function (element) {
+  element.addEventListener('click', function () {
     window.location.href = 'https://api.whatsapp.com/send?phone=6285346741110&text=Thank you for your time, I look forward ...';
   });
-}
+});
 
 function toggleMenu() {
   var navToggle = document.getElementsByClassName("js-toggle");
@@ -5967,7 +5966,11 @@ var options = {
   // }
 
 };
-new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())('.splide', options).mount();
+
+if (document.getElementsByClassName('splide').length !== 0) {
+  new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())('.splide', options).mount();
+}
+
 var modal = document.getElementById('myModal');
 var modalImg = document.getElementById("img01");
 var imgs = document.getElementsByClassName('zoom');
@@ -6000,9 +6003,11 @@ function imgonclick() {
 
 var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+if (span) {
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+}
 
 /***/ }),
 
