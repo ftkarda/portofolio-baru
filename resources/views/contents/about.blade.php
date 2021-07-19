@@ -14,7 +14,7 @@
     <div class="text-center">
       <ion-icon name="person" class="text-6xl text-cyan-400"></ion-icon>
       <h2 class="text-5xl text-gray-800 font-bold leading-relaxed">About Me </h2>
-      <p class=" text-gray-800 text-2xl">Born in Balikpapan, graduate from <span class="text-red-600"> Telkom University </span> with degree in informatics. I am self-motivated with passion for technology, basic knowledge on programming, networking and have a strong organization skills.</p>
+      <p class=" text-gray-800 text-basic md:text-2xl">Born in Balikpapan, graduate from <span class="text-red-600"> Telkom University </span> with degree in informatics. I am self-motivated with passion for technology, basic knowledge on programming, networking and have a strong organization skills.</p>
     </div>
   </div>
   
